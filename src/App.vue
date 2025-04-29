@@ -1,11 +1,29 @@
-<script setup>
+<!-- 
+• Este projeto será uma calculadora aritmética;
 
-</script>
+• Deverá conter dois campos para inserir os números;
+
+• Um campo do tipo select para escolher a operação aritmética;
+
+• Ao alterar os valores o cálculo já deverá ser realizado, sem precisar clicar em nenhum botão; 
+-->
 
 <template>
-  cole
+  <div class="container">
+    <TheHeader/>
+    
+    <OperandsForms/>
+
+    </div>
 </template>
 
-<style scoped>
+<script>
+  import TheHeader from './components/TheHeader.vue';
+  import OperandsForms from './components/OperandsForms.vue';
 
-</style>
+  export default {
+    name: 'App',
+    components: { TheHeader, OperandsForms },
+  }
+
+</script>
